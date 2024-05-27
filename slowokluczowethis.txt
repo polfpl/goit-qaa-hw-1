@@ -1,0 +1,28 @@
+Napisz krótkie wyjaśnienie słowa kluczowego this w JavaScript.
+Podaj przynajmniej dwa przykłady demonstrujące użycie this w JavaScript, wyjaśniając kontekst i znaczenie każdego przykładu.
+===========================================================================================================
+
+"this" to słowo kluczowe w JavaScript, które odnosi się do bieżącego obiektu. To, do czego odnosi się this, zależy od kontekstu, w którym jest używane.
+
+Na przykład w metodzie obiektu this odnosi się do obiektu, który wywołał metodę. 
+W funkcji this odnosi się do globalnego obiektu, chyba że funkcja jest wywoływana jako metoda obiektu.
+
+"this" w programowaniu obiektowym w JavaScript odnosi się do bieżącego obiektu, w którym jest używane. Określa kontekst wykonania kodu i jest używane do dostępu do właściwości i metod obiektu.
+
+Przykład:
+
+const person = {
+  name: "Adam",
+  age: 30,
+  greet: function() {
+    console.log(`Cześć, jestem ${this.name} i mam ${this.age} lat.`);
+  }
+};
+
+person.greet(); // Wyświetli: Cześć, jestem Adam i mam 30 lat.
+
+W tym przykładzie "this" odnosi się do obiektu `person`, ponieważ metoda `greet` jest wywoływana na tym obiekcie.
+
+"this" jest szczególnie przydatne w metodach obiektu, ponieważ pozwala na dostęp do właściwości i metod obiektu bez konieczności jawnego podawania nazwy obiektu.
+
+Wartość "this" może się zmieniać w zależności od kontekstu, w którym jest używane. Na przykład, jeśli metoda obiektu jest wywoływana jako funkcja (bez określenia kontekstu obiektu), "this"" odnosi się do globalnego obiektu.
