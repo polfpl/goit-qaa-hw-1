@@ -12,15 +12,15 @@ Przetestuj swój obiekt, dodając kilku autorów do półki na książki, a nast
 
 
 
-const bookShelf = {											//deklaracja obiektu bookShelf
+const bookShelf = {								//deklaracja obiektu bookShelf
 	authors: ["Prus", "Mickiewicz", "Poe", ],				//właściwość: tablica autorów	
-	getAuthors(){											//definicja metody  
-	return this.authors},									//wywołanie właściwości(tablicy) przy użyciu 
-															//this odwołującego się do bookShelf
-	addAuthor(authorName){this.authors.push(authorName)},	//definicja metody użycie this jako bookShelf
+	getAuthors(){								//definicja metody  
+	return this.authors},							//wywołanie właściwości(tablicy) przy użyciu 
+										//this odwołującego się do bookShelf
+	addAuthor(authorName){this.authors.push(authorName)},			//definicja metody użycie this jako bookShelf
 }
 	console.log(bookShelf.getAuthors());					//wywołanie w konsoli metody getAuthors
-	bookShelf.addAuthor("Platon");							//wywołanie metody addAuthor i dodanie do 
-															//do tablicy nowego autora (Platon)
+	bookShelf.addAuthor("Platon");						//wywołanie metody addAuthor i dodanie do 
+										//do tablicy nowego autora (Platon)
 	console.log(bookShelf.getAuthors());					//wywołanie w konsoli metody getAuthors
-															//z dodanym nowym autorem
+										//z dodanym nowym autorem
